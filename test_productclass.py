@@ -25,8 +25,8 @@ product2.prodlist()
 product3.prodlist()
 product4.prodlist()
 
-class ProdSel:
-    def selprompt():
+class ProdSell:
+    def sellprompt():
         selection = input("[Case Sensitive] Select Product: ")
         match selection:
             case 'Juice':
@@ -46,5 +46,5 @@ class ProdSel:
                 left = product4.quantity-quant
                 print(f"That would be {product4.quantity*product4.price} P and {left} remaining")
 
-test = ProdSel
-test.selprompt()
+sl = ProdSell
+sl.sellprompt()
